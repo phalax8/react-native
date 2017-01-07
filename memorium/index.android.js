@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+const Login = require('./src/components/loginView');
+
 export default class memorium extends Component {
   render() {
     return (
@@ -19,13 +21,7 @@ export default class memorium extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <Login></Login>
       </View>
     );
   }
